@@ -1,4 +1,4 @@
-class BaseStoreAdapters(object):
+class BaseStore(object):
 
     def get(self, key):
         pass

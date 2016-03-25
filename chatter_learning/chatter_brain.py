@@ -1,6 +1,7 @@
 class ChatterBrain(object):
 
     def __init__(self, **kwargs):
-        for key in kwargs:
-            if key == 'store_adapter':
-                pass
+        pass
+
+    def response_to(self, input_text):
+        pass
