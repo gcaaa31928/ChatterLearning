@@ -30,5 +30,11 @@ class Mongodb(BaseStore):
         matches = list(matches)
         return matches
 
+    def filter(self, word):
+        regex = ".*%s.*" % word
+        matches = self.conversations.find({'ask': {"$regex" : regex}})
+        matches = list(matches)
+        return matches
+
     def drop(self):
         self.client.drop_database(self.database_name)

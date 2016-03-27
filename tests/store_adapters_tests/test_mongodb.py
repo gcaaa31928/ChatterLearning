@@ -31,4 +31,12 @@ class TestMongodb(TestCase):
         list = self.mongodb.list()
         self.assertEqual(len(list), 3)
 
+    def test_filter(self):
+        self.mongodb.put_answer('how are you', 'im fine')
+        self.mongodb.put_answer('are you a boy or girl?', 'boy')
+        self.mongodb.put_answer('are you a boy or girl?', 'girl')
+        self.mongodb.put_answer('how old are you', '23')
+        result = self.mongodb.filter('old')[0]
+        self.assertEqual(result['answers'], ['23'])
+
 
