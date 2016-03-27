@@ -14,7 +14,7 @@ class Mongodb(BaseStore):
         data = self.conversations.find_one({'ask': key})
         if not data:
             return None
-        return data['answers']
+        return data
 
     def put_answer(self, ask, answer):
         data = self.conversations.find_one({'ask': ask})
@@ -29,6 +29,14 @@ class Mongodb(BaseStore):
         matches = self.conversations.find()
         matches = list(matches)
         return matches
+
+    def list_answers(self):
+        matches = self.conversations.find()
+        matches = list(matches)
+        answers_list = []
+        for match in matches:
+            answers_list += match['answers']
+        return answers_list
 
     def filter(self, word):
         regex = ".*%s.*" % word

@@ -8,6 +8,7 @@ class TestClosestMean(TestCase):
 
     def setUp(self):
         self.closest_mean = ClosestMean()
+        self.closest_mean.set_store(Mongodb(database_name='test_database'))
 
 
     def tearDown(self):
@@ -19,7 +20,7 @@ class TestClosestMean(TestCase):
         self.closest_mean.store.put_answer('你今年幾歲', '22')
         confidence, result = self.closest_mean.process('幾歲')
         self.assertEqual(confidence, 0.5)
-        self.assertEqual(result, ['22'])
+        self.assertEqual(result, '22')
 
     def test_get_similarity(self):
         result = self.closest_mean.get_similarity('我目前就讀於台北科技大學', '台北')

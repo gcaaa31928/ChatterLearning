@@ -13,7 +13,7 @@ class TestMongodb(TestCase):
     def test_get(self):
         self.mongodb.put_answer('how are you', 'im fine')
         actual = self.mongodb.get('how are you')
-        self.assertEqual(actual, ['im fine'])
+        self.assertEqual(actual['answers'], ['im fine'])
 
     def test_put_answer(self):
         self.mongodb.put_answer('how are you', 'im fine')

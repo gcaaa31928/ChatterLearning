@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c377592-6f43-4388-bfc9-e10e39fdad1e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/brains_tests/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/brains_tests/test_closestMean.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/chatter_learning/dicts/dict.txt.big" afterPath="$PROJECT_DIR$/dicts/dict.txt.big" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chatter_learning/brains/pick_strategy.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/demo.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/brains_tests/test_closestMean.py" afterPath="$PROJECT_DIR$/tests/brains_tests/test_closest_mean.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chatter_learning/__init__.py" afterPath="$PROJECT_DIR$/chatter_learning/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chatter_learning/brains/__init__.py" afterPath="$PROJECT_DIR$/chatter_learning/brains/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chatter_learning/brains/closest_mean.py" afterPath="$PROJECT_DIR$/chatter_learning/brains/closest_mean.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chatter_learning/chatter.py" afterPath="$PROJECT_DIR$/chatter_learning/chatter.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chatter_learning/main.py" afterPath="$PROJECT_DIR$/chatter_learning/main.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chatter_learning/store_adapters/mongodb.py" afterPath="$PROJECT_DIR$/chatter_learning/store_adapters/mongodb.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/store_adapters_tests/test_mongodb.py" afterPath="$PROJECT_DIR$/tests/store_adapters_tests/test_mongodb.py" />
@@ -29,10 +29,12 @@
     <SUITE FILE_PATH="coverage/ChatterLearning$Unittest_TestClosestMean_test_get_similarity.coverage" NAME="Unittest TestClosestMean.test_get_similarity Coverage Results" MODIFIED="1459071038601" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/brains_tests" />
     <SUITE FILE_PATH="coverage/ChatterLearning$Unittest_TestMongodb_test_put_answer.coverage" NAME="Unittest TestMongodb.test_put_answer Coverage Results" MODIFIED="1459017504375" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/store_adapters_tests" />
     <SUITE FILE_PATH="coverage/ChatterLearning$Unittest_TestMongodb_test_list.coverage" NAME="Unittest TestMongodb.test_list Coverage Results" MODIFIED="1459017620492" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/store_adapters_tests" />
-    <SUITE FILE_PATH="coverage/ChatterLearning$Unittest_TestMongodb_test_get.coverage" NAME="Unittest TestMongodb.test_get Coverage Results" MODIFIED="1459009019809" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/store_adapters_tests" />
-    <SUITE FILE_PATH="coverage/ChatterLearning$Unnamed.coverage" NAME="Unnamed Coverage Results" MODIFIED="1459069057504" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chatter_learning" />
+    <SUITE FILE_PATH="coverage/ChatterLearning$Unittest_TestMongodb_test_get.coverage" NAME="Unittest TestMongodb.test_get Coverage Results" MODIFIED="1459087908724" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/store_adapters_tests" />
+    <SUITE FILE_PATH="coverage/ChatterLearning$Unnamed.coverage" NAME="Unnamed Coverage Results" MODIFIED="1459098636439" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples" />
     <SUITE FILE_PATH="coverage/ChatterLearning$Unittest_TestMongodb_test_filter.coverage" NAME="Unittest TestMongodb.test_filter Coverage Results" MODIFIED="1459065185131" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/store_adapters_tests" />
     <SUITE FILE_PATH="coverage/ChatterLearning$Unittest_TestClosestMean_test_process.coverage" NAME="Unittest TestClosestMean.test_process Coverage Results" MODIFIED="1459074386981" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/brains_tests" />
+    <SUITE FILE_PATH="coverage/ChatterLearning$Unittest_TestClosestMean_test_process__1_.coverage" NAME="Unittest TestClosestMean.test_process (1) Coverage Results" MODIFIED="1459097157348" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/brains_tests" />
+    <SUITE FILE_PATH="coverage/ChatterLearning$Unittests_in_TestClosestMean.coverage" NAME="Unittests in TestClosestMean Coverage Results" MODIFIED="1459087538012" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/brains_tests" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -42,26 +44,54 @@
     <favorites_list name="ChatterLearning" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.34180433">
+    <splitter split-orientation="horizontal" split-proportion="0.6131718">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="closest_mean.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/chatter_learning/brains/closest_mean.py">
+          <file leaf-file-name="pick_strategy.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/chatter_learning/brains/pick_strategy.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="1.2519562">
-                  <caret line="38" column="49" selection-start-line="38" selection-start-column="49" selection-end-line="38" selection-end-column="49" />
-                  <folding>
-                    <element signature="e#0#45#0" expanded="true" />
-                  </folding>
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+                  <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="base_brain.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/chatter_learning/brains/base_brain.py">
+          <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/chatter_learning/main.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="0" column="6" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
+                  <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/examples/__init__.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="demo.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/examples/demo.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.14124294">
+                  <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="6" selection-end-column="38" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/jieba/__init__.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="374" column="13" selection-start-line="374" selection-start-column="13" selection-end-line="374" selection-end-column="13" />
                   <folding />
                 </state>
               </provider>
@@ -71,7 +101,7 @@
             <entry file="file://$PROJECT_DIR$/chatter_learning/__init__.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
+                  <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
                   <folding />
                 </state>
               </provider>
@@ -81,55 +111,35 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="mongodb.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/chatter_learning/store_adapters/mongodb.py">
+          <file leaf-file-name="closest_mean.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/chatter_learning/brains/closest_mean.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+                <state vertical-scroll-proportion="0.16572505">
+                  <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
                   <folding>
-                    <element signature="e#0#53#0" expanded="true" />
+                    <element signature="e#0#45#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="chatter.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="chatter.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/chatter_learning/chatter.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.19561815">
-                  <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="base_store.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/chatter_learning/store_adapters/base_store.py">
-              <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/chatter_learning/main.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-9.266666">
-                  <caret line="52" column="13" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
+                  <caret line="33" column="44" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
                   <folding>
-                    <element signature="e#16#55#0" expanded="true" />
+                    <element signature="e#16#63#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="test_closestMean.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/tests/brains_tests/test_closestMean.py">
+          <file leaf-file-name="test_closest_mean.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/tests/brains_tests/test_closest_mean.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+                  <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
                   <folding>
                     <element signature="e#16#45#0" expanded="true" />
                   </folding>
@@ -137,12 +147,14 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/jieba/__init__.py">
+          <file leaf-file-name="mongodb.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/chatter_learning/store_adapters/mongodb.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="373" column="0" selection-start-line="373" selection-start-column="0" selection-end-line="373" selection-end-column="0" />
-                  <folding />
+                  <caret line="32" column="20" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="20" />
+                  <folding>
+                    <element signature="e#0#53#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -170,17 +182,21 @@
         <option value="$PROJECT_DIR$/chatter_learning/chatter_brain.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/chatter_learning/store_adapters/__init__.py" />
-        <option value="$PROJECT_DIR$/chatter_learning/chatter.py" />
         <option value="$PROJECT_DIR$/chatter_learning/brains/base_brain.py" />
         <option value="$PROJECT_DIR$/chatter_learning/store_adapters/base_store.py" />
-        <option value="$PROJECT_DIR$/chatter_learning/main.py" />
         <option value="$PROJECT_DIR$/chatter_learning/store_adapters/test_mongodb.py" />
         <option value="$PROJECT_DIR$/chatter_learning/__init__.py" />
-        <option value="$PROJECT_DIR$/chatter_learning/store_adapters/mongodb.py" />
-        <option value="$PROJECT_DIR$/tests/store_adapters_tests/test_mongodb.py" />
         <option value="$PROJECT_DIR$/chatter_learning/brains/__init__.py" />
-        <option value="$PROJECT_DIR$/chatter_learning/brains/closest_mean.py" />
         <option value="$PROJECT_DIR$/tests/brains_tests/test_closestMean.py" />
+        <option value="$PROJECT_DIR$/tests/store_adapters_tests/test_mongodb.py" />
+        <option value="$PROJECT_DIR$/chatter_learning/brains/pick_strategy.py" />
+        <option value="$PROJECT_DIR$/chatter_learning/store_adapters/mongodb.py" />
+        <option value="$PROJECT_DIR$/tests/brains_tests/test_closest_mean.py" />
+        <option value="$PROJECT_DIR$/chatter_learning/main.py" />
+        <option value="$PROJECT_DIR$/examples/__init__.py" />
+        <option value="$PROJECT_DIR$/examples/demo.py" />
+        <option value="$PROJECT_DIR$/chatter_learning/chatter.py" />
+        <option value="$PROJECT_DIR$/chatter_learning/brains/closest_mean.py" />
       </list>
     </option>
   </component>
@@ -300,6 +316,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="examples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ChatterLearning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ChatterLearning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="dicts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -332,24 +362,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="store_adapters" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ChatterLearning" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ChatterLearning" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chatter_learning" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="brains" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -359,11 +371,12 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/tests/brains_tests" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/examples/demo.py" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="D:\Program Files\nodejs\node.exe" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="SearchEverywhereHistoryKey" value="main.py&#9;FILE&#9;file://C:/Work/ChatterLearning/chatter_learning/main.py&#10;mongo&#9;FILE&#9;file://C:/Work/ChatterLearning/chatter_learning/store_adapters/mongodb.py&#10;testclose&#9;FILE&#9;file://C:/Work/ChatterLearning/tests/brains_tests/test_closest_mean.py&#10;testmon&#9;FILE&#9;file://C:/Work/ChatterLearning/tests/store_adapters_tests/test_mongodb.py&#10;testm&#9;FILE&#9;file://C:/Work/ChatterLearning/tests/store_adapters_tests/test_mongodb.py" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -371,76 +384,7 @@
       <recent name="C:\Work\ChatterLearning\chatter_learning\dicts" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Unittest TestClosestMean.test_process">
-    <configuration default="false" name="Unittest TestMongodb.test_list" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/store_adapters_tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="ChatterLearning" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/store_adapters_tests/test_mongodb.py" />
-      <option name="CLASS_NAME" value="TestMongodb" />
-      <option name="METHOD_NAME" value="test_list" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_METHOD" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Unittests in TestMongodb" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/store_adapters_tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="ChatterLearning" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/store_adapters_tests/test_mongodb.py" />
-      <option name="CLASS_NAME" value="TestMongodb" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_CLASS" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Unittest TestMongodb.test_filter" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/store_adapters_tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="ChatterLearning" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/store_adapters_tests/test_mongodb.py" />
-      <option name="CLASS_NAME" value="TestMongodb" />
-      <option name="METHOD_NAME" value="test_filter" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_METHOD" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.Unnamed">
     <configuration default="false" name="Unittest TestClosestMean.test_get_similarity" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -452,7 +396,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="ChatterLearning" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/brains_tests/test_closestMean.py" />
+      <option name="SCRIPT_NAME" value="C:\Work\ChatterLearning\tests\brains_tests\test_closest_mean.py" />
       <option name="CLASS_NAME" value="TestClosestMean" />
       <option name="METHOD_NAME" value="test_get_similarity" />
       <option name="FOLDER_NAME" value="" />
@@ -475,9 +419,78 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="ChatterLearning" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/brains_tests/test_closestMean.py" />
+      <option name="SCRIPT_NAME" value="C:\Work\ChatterLearning\tests\brains_tests\test_closest_mean.py" />
       <option name="CLASS_NAME" value="TestClosestMean" />
       <option name="METHOD_NAME" value="test_process" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_METHOD" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in TestClosestMean" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/brains_tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ChatterLearning" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/brains_tests/test_closest_mean.py" />
+      <option name="CLASS_NAME" value="TestClosestMean" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_CLASS" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittest TestClosestMean.test_process (1)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/brains_tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ChatterLearning" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/brains_tests/test_closest_mean.py" />
+      <option name="CLASS_NAME" value="TestClosestMean" />
+      <option name="METHOD_NAME" value="test_process" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_METHOD" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittest TestMongodb.test_get" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/store_adapters_tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ChatterLearning" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/store_adapters_tests/test_mongodb.py" />
+      <option name="CLASS_NAME" value="TestMongodb" />
+      <option name="METHOD_NAME" value="test_get" />
       <option name="FOLDER_NAME" value="" />
       <option name="TEST_TYPE" value="TEST_METHOD" />
       <option name="PATTERN" value="" />
@@ -687,32 +700,32 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="C:\Work\ChatterLearning\venv\Scripts\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chatter_learning" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="ChatterLearning" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chatter_learning/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/examples/demo.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.Unnamed" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittest TestMongodb.test_list" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in TestMongodb" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittest TestMongodb.test_filter" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittest TestClosestMean.test_get_similarity" />
-      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittest TestClosestMean.test_process" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittest TestClosestMean.test_get_similarity" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittest TestClosestMean.test_process" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in TestClosestMean" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittest TestClosestMean.test_process (1)" />
+      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittest TestMongodb.test_get" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittest TestClosestMean.test_process" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittest TestClosestMean.test_get_similarity" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittest TestMongodb.test_filter" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in TestMongodb" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittest TestMongodb.test_list" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittest TestClosestMean.test_process (1)" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittest TestMongodb.test_get" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in TestClosestMean" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittest TestClosestMean.test_process" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittest TestClosestMean.test_get_similarity" />
       </list>
     </recent_temporary>
   </component>
@@ -730,21 +743,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittest_TestClosestMean_test_get_similarity - 2016.03.27 at 17h 29m 20s.xml">
-      <configuration name="Unittest TestClosestMean.test_get_similarity" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittest_TestClosestMean_test_get_similarity - 2016.03.27 at 17h 30m 45s.xml">
-      <configuration name="Unittest TestClosestMean.test_get_similarity" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittest_TestClosestMean_test_process - 2016.03.27 at 18h 22m 20s.xml">
-      <configuration name="Unittest TestClosestMean.test_process" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittest_TestClosestMean_test_process - 2016.03.27 at 18h 22m 35s.xml">
-      <configuration name="Unittest TestClosestMean.test_process" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittest_TestClosestMean_test_process - 2016.03.27 at 18h 23m 43s.xml">
-      <configuration name="Unittest TestClosestMean.test_process" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittest_TestClosestMean_test_process - 2016.03.27 at 18h 24m 36s.xml">
       <configuration name="Unittest TestClosestMean.test_process" configurationId="tests" />
     </history-entry>
@@ -760,23 +758,38 @@
     <history-entry file="Unittest_TestClosestMean_test_process - 2016.03.27 at 18h 26m 33s.xml">
       <configuration name="Unittest TestClosestMean.test_process" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittest_TestClosestMean_test_process_(1) - 2016.03.27 at 22h 06m 29s.xml">
+      <configuration name="Unittest TestClosestMean.test_process (1)" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittest_TestClosestMean_test_process_(1) - 2016.03.28 at 00h 45m 49s.xml">
+      <configuration name="Unittest TestClosestMean.test_process (1)" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittest_TestClosestMean_test_process_(1) - 2016.03.28 at 00h 46m 04s.xml">
+      <configuration name="Unittest TestClosestMean.test_process (1)" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittest_TestMongodb_test_get - 2016.03.27 at 22h 11m 51s.xml">
+      <configuration name="Unittest TestMongodb.test_get" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_TestClosestMean - 2016.03.27 at 22h 05m 52s.xml">
+      <configuration name="Unittests in TestClosestMean" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1634" height="1066" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16073698" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32976446" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.07181136" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28403002" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28403002" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39978564" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39978564" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -797,7 +810,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -883,31 +898,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/jieba/__init__.py">
+    <entry file="file://$PROJECT_DIR$/chatter_learning/brains/base_brain.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="373" column="0" selection-start-line="373" selection-start-column="0" selection-end-line="373" selection-end-column="0" />
+          <caret line="0" column="6" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/store_adapters_tests/test_mongodb.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2738654">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chatter_learning/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.266666">
-          <caret line="52" column="13" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
-          <folding>
-            <element signature="e#16#55#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -919,38 +914,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chatter_learning/brains/base_brain.py">
+    <entry file="file://$PROJECT_DIR$/tests/store_adapters_tests/test_mongodb.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="6" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chatter_learning/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chatter_learning/brains/closest_mean.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.2519562">
-          <caret line="38" column="49" selection-start-line="38" selection-start-column="49" selection-end-line="38" selection-end-column="49" />
+          <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
           <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/brains_tests/test_closestMean.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
-          <folding>
-            <element signature="e#16#45#0" expanded="true" />
+            <element signature="e#0#29#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -958,17 +927,87 @@
     <entry file="file://$PROJECT_DIR$/chatter_learning/store_adapters/mongodb.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+          <caret line="32" column="20" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="20" />
           <folding>
             <element signature="e#0#53#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/chatter_learning/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chatter_learning/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/jieba/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="374" column="13" selection-start-line="374" selection-start-column="13" selection-end-line="374" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chatter_learning/brains/pick_strategy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/brains_tests/test_closest_mean.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+          <folding>
+            <element signature="e#16#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/chatter_learning/chatter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19561815">
-          <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="44" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
+          <folding>
+            <element signature="e#16#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chatter_learning/brains/closest_mean.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16572505">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14124294">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="6" selection-end-column="38" />
           <folding />
         </state>
       </provider>
