@@ -8,7 +8,8 @@ import itertools
 class ClosestMean(BaseBrain):
 
     def __init__(self,  **kwargs):
-        jieba.load_userdict('../dicts/dict.txt.big')
+        dict_path = kwargs.get('dict_path', 'dict.txt.big')
+        jieba.load_userdict(dict_path)
 
     def set_store(self, store):
         self.store = store
