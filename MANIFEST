@@ -5,3 +5,11 @@ chatter_learning\__init__.py
 chatter_learning\chatter.py
 chatter_learning\exceptions.py
 chatter_learning\main.py
+chatter_learning\brains\__init__.py
+chatter_learning\brains\base_brain.py
+chatter_learning\brains\closest_mean.py
+chatter_learning\brains\dict.txt.big
+chatter_learning\brains\pick_strategy.py
+chatter_learning\store_adapters\__init__.py
+chatter_learning\store_adapters\base_store.py
+chatter_learning\store_adapters\mongodb.py

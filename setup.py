@@ -1,11 +1,8 @@
 from distutils.core import setup
 
-req = open('requirements.txt')
-requirements = req.readlines()
-req.close()
-version = __import__('chatterbot').__version__
-author = __import__('chatterbot').__author__
-author_email = __import__('chatterbot').__email__
+version = __import__('chatter_learning').__version__
+author = __import__('chatter_learning').__author__
+author_email = __import__('chatter_learning').__email__
 setup(
     name = 'ChatterLearning',
     packages = [
@@ -14,7 +11,8 @@ setup(
         'chatter_learning.store_adapters',
 
     ],
-    install_requires= requirements,
+    package_data={'chatter_learning.brains':['*.big']},
+    install_requires= ['pymongo', 'jieba'],
     scripts = [],
     version = version,
     description = 'Automatic Chat',

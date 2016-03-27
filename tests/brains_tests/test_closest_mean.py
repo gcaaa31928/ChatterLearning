@@ -7,7 +7,7 @@ from chatter_learning.store_adapters import Mongodb
 class TestClosestMean(TestCase):
 
     def setUp(self):
-        self.closest_mean = ClosestMean(dict_path='../dict.txt.big')
+        self.closest_mean = ClosestMean()
         self.closest_mean.set_store(Mongodb(database_name='test_database'))
 
 

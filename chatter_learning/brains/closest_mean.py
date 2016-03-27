@@ -1,3 +1,4 @@
+import os
 from chatter_learning.brains import BaseBrain
 import jieba
 import jieba.analyse
@@ -8,7 +9,8 @@ import itertools
 class ClosestMean(BaseBrain):
 
     def __init__(self,  **kwargs):
-        dict_path = kwargs.get('dict_path', 'dict.txt.big')
+        dir = "%s/dict.txt.big" % os.path.dirname(__file__)
+        dict_path = kwargs.get('dict_path', dir)
         jieba.load_userdict(dict_path)
 
     def set_store(self, store):
@@ -44,7 +46,7 @@ class ClosestMean(BaseBrain):
         for ask in ask_list:
             similarity =  self.get_similarity(ask, input)
             total_similarity += similarity
-            if similarity > highest_similarity:
+            if similarity >= highest_similarity:
                 highest_similarity = similarity
                 closest_ask = ask
         try:

@@ -1,10 +1,12 @@
 #encoding=utf-8
+import os
 from chatter_learning.brains import ClosestMean
 from chatter_learning.store_adapters import Mongodb
 
 
 class Chatter(object):
     def __init__(self, **kwargs):
+
         brain_name = kwargs.get('brain', 'closest_mean')
         storage_name = kwargs.get('brain', 'mongodb')
         self.set_store(storage_name, **kwargs)
