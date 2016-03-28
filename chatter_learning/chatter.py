@@ -1,6 +1,7 @@
 #encoding=utf-8
 import os
 from chatter_learning.brains import ClosestMean
+from chatter_learning.brains.closest_method import ClosestMethod
 from chatter_learning.store_adapters import Mongodb
 
 
@@ -20,6 +21,8 @@ class Chatter(object):
     def set_brain(self, brain_name, **kwargs):
         if brain_name == 'closest_mean':
             self.brain = ClosestMean(**kwargs)
+        elif brain_name == 'closest_method':
+            self.brain = ClosestMethod(**kwargs)
 
     def connected_brain_on_store(self):
         self.brain.set_store(self.store)
