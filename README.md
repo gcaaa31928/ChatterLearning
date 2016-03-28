@@ -1,6 +1,6 @@
 # ChatterLearning
 
-**ChatterLearning** is automatic reply bot, it's can reply any text if it had data in, and it machine-learning based engine build in **Python** which can generate answers to those unkown questions.
+**ChatterLearning** is automatic reply bot in Chinese, it's can reply any text if it had data in, and it machine-learning based engine build in Python which can generate answers to those unkown questions.
 
 
 
