@@ -1,23 +1,15 @@
-from distutils.core import setup
+from setuptools import setup, find_packages
 
-version = __import__('chatter_learning').__version__
-author = __import__('chatter_learning').__author__
-author_email = __import__('chatter_learning').__email__
 setup(
     name = 'ChatterLearning',
-    packages = [
-        'chatter_learning',
-        'chatter_learning.brains',
-        'chatter_learning.store_adapters',
-
-    ],
+    packages = find_packages(),
+    install_requires=['pymongo', 'jieba'],
     package_data={'chatter_learning.brains':['*.big']},
-    install_requires= ['pymongo', 'jieba'],
     scripts = [],
-    version = version,
+    version = '1.0.8',
     description = 'Automatic Chat',
-    author = author,
-    author_email = author_email,
+    author = 'GCA',
+    author_email = 'gcaaa31928@gmail.com',
     url = 'https://github.com/gcaaa31928/ChatterLearningt',
     download_url = 'https://github.com/gcaaa31928/ChatterLearning/releases/tag/v1.0',
     keywords = ['ai', 'chat', 'bot'],
