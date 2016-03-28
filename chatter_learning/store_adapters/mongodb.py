@@ -1,10 +1,9 @@
 from chatter_learning.store_adapters import BaseStore
 from pymongo import MongoClient
-import json
 class Mongodb(BaseStore):
 
     def __init__(self, **kwargs):
-        self.database_url = kwargs.get('database_url', 'mongodb://localhost:27017')
+        self.database_url = kwargs.get('database_url', 'mongodb://127.0.0.1:27017')
         self.database_name = kwargs.get('database_name', 'chatterLearning')
         self.client = MongoClient(self.database_url)
         self.database = self.client[self.database_name]

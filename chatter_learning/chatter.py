@@ -28,9 +28,9 @@ class Chatter(object):
         return self.recent_conversations[-1]
 
     def append_answer_to_conversation(self, conversation, answer):
-        if conversation['answers'] is None:
-            conversation['answers'] = []
-        conversation['answers'].append(answer)
+        for ask in conversation['answers']:
+            self.store.put_answer(ask, answer)
+
 
     def response_to(self, ask):
         confidence, response = self.brain.process(ask)
@@ -43,7 +43,7 @@ class Chatter(object):
             current_conversation = conversation
         if len(self.recent_conversations) > 0:
             previous_conversation = self.get_previous_conversation()
-            self.store.put_answer(previous_conversation['ask'], ask)
+            self.append_answer_to_conversation(previous_conversation, ask)
         self.recent_conversations.append(current_conversation)
         return response
 
