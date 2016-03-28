@@ -5,7 +5,8 @@
 
 
 ## Installation
-    MongoDB needed
+Python 2.7
+MongoDB needed
     
     
 
@@ -14,7 +15,7 @@
     
     from chatter_learning import Chatter
     
-    chatter = Chatter()
+    chatter = Chatter(database_url='mongodb://localhost:27017')
     
     while True:
         testVar = raw_input()
