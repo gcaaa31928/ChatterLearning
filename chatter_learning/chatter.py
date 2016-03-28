@@ -13,7 +13,7 @@ class Chatter(object):
         self.set_store(storage_name, **kwargs)
         self.set_brain(brain_name, **kwargs)
         self.connected_brain_on_store()
-        self.recent_conversations = []
+        self.recent_answers = []
     def set_store(self, store_adapter_name, **kwargs):
         if store_adapter_name == 'mongodb':
             self.store = Mongodb(**kwargs)
@@ -27,13 +27,12 @@ class Chatter(object):
     def connected_brain_on_store(self):
         self.brain.set_store(self.store)
 
-    def get_previous_conversation(self):
-        return self.recent_conversations[-1]
+    def get_previous_answers(self):
+        return self.recent_answers[-1]
 
-    def append_answer_to_conversation(self, conversation, answer):
-        if conversation['answers'] is None:
-            conversation['answers'] = []
-        conversation['answers'].append(answer)
+    def append_answer_to_question(self, question, answer):
+        self.store.put_answer(question, answer)
+
 
     def response_to(self, ask):
         confidence, response = self.brain.process(ask)
@@ -44,9 +43,9 @@ class Chatter(object):
         conversation = self.store.get(ask)
         if conversation:
             current_conversation = conversation
-        if len(self.recent_conversations) > 0:
-            previous_conversation = self.get_previous_conversation()
-            self.store.put_answer(previous_conversation['ask'], ask)
-        self.recent_conversations.append(current_conversation)
+        if len(self.recent_answers) > 0:
+            previous_answer = self.get_previous_answers()
+            self.append_answer_to_question(previous_answer, ask)
+        self.recent_answers.append(response)
         return response
 

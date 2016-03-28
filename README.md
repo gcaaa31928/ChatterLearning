@@ -1,8 +1,24 @@
 # ChatterLearning
 
-這是一個能夠自我學習，自動回覆的機器人
+**ChatterLearning** is automatic reply bot in Chinese, it's can reply any text if it had data in, and it machine-learning based engine build in Python which can generate answers to those unkown questions.
 
-利用jieba斷詞分析並且自動判斷權值最大且最有可能的問題
 
-目前是利用mongodb做儲存，當然adapter可以實作出不同的database
+
+## Installation
+Python 2.7
+MongoDB needed
+    
+    
+
+
+    pip install chatterLearning
+    
+    from chatter_learning import Chatter
+    
+    chatter = Chatter(database_url='mongodb://localhost:27017')
+    
+    while True:
+        testVar = raw_input()
+        print chatter.response_to(testVar)
+
 
