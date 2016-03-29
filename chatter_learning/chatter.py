@@ -8,8 +8,8 @@ from chatter_learning.store_adapters import Mongodb
 class Chatter(object):
     def __init__(self, **kwargs):
 
-        brain_name = kwargs.get('brain', 'closest_mean')
-        storage_name = kwargs.get('brain', 'mongodb')
+        brain_name = kwargs.get('brain', 'closest_method')
+        storage_name = kwargs.get('storage', 'mongodb')
         self.set_store(storage_name, **kwargs)
         self.set_brain(brain_name, **kwargs)
         self.connected_brain_on_store()

@@ -20,13 +20,13 @@ class ClosestMean(BaseBrain):
         self.store.drop()
 
     def process(self, input):
-        highest_weight = jieba.analyse.extract_tags(input, withWeight=True)
-        if len(highest_weight) == 0:
-            highest_weight_word = input
-        else:
-            highest_weight_word = highest_weight[0][0]
+        # highest_weight = jieba.analyse.extract_tags(input, withWeight=True)
+        # if len(highest_weight) == 0:
+        #     highest_weight_word = input
+        # else:
+        #     highest_weight_word = highest_weight[0][0]
         # highest weight word
-        available_conversations = self.store.filter(highest_weight_word)
+        available_conversations = self.store.filter()
 
         # can't find any conversations, just return random one
         if len(available_conversations) == 0:
@@ -39,6 +39,11 @@ class ClosestMean(BaseBrain):
         ask_list = []
         for conversation in available_conversations:
             ask_list.append(conversation['ask'])
+
+        # exact match
+        if input in ask_list:
+            result = [s for s in available_conversations if s['ask'] == input][0]
+            return 1, PickStrategy.get_random(result['answers'])
 
         total_similarity = 0
         highest_similarity = 0

@@ -37,9 +37,12 @@ class Mongodb(BaseStore):
             answers_list += match['answers']
         return answers_list
 
-    def filter(self, word):
-        regex = ".*%s.*" % word
-        matches = self.conversations.find({'ask': {"$regex" : regex}})
+    def filter(self, word = None):
+        if word is None:
+            matches = self.conversations.find()
+        else:
+            regex = ".*%s.*" % word
+            matches = self.conversations.find({'ask': {"$regex" : regex}})
         matches = list(matches)
         return matches
 
